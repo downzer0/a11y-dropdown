@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Accessible dropdown navigation</title>
+    <style>
+        body { font-family: sans-serif; }
+    </style>
+    <link type="text/css" rel="stylesheet" href="a11y-dropdown.css" />
+</head>
+<body>
+    <div role="contentinfo">
+        <h1>Accessible dropdown navigation</h1>
+        <p>A lightweight jQuery script for website dropdown navigation on WordPress sites. It works with mouse or keyboard inputs. Touch support in progress. <a href="https://github.com/clrux/a11y-dropdown">Visit this project on Github</a>.</p>
+    </div>
+    <section aria-label="Dropdown example">
+        <ul class="a11y-dropdown">
+            <li class="menu-item menu-item-has-children">
+                <a href="#">Fruits</a>
+                <ul class="sub-menu sr-only">
+                    <li class="menu-item"><a href="#">Apples</a></li>
+                    <li class="menu-item"><a href="#">Oranges</a></li>
+                    <li class="menu-item"><a href="#">Pears</a></li>
+                    <li class="menu-item"><a href="#">Bananas</a></li>
+                    <li class="menu-item"><a href="#">Pineapple</a></li>
+                </ul>
+            </li>
+            <li class="menu-item menu-item-has-children">
+                <a href="#">Vegetables</a>
+                <ul class="sub-menu sr-only">
+                    <li class="menu-item"><a href="#">Lettuce</a></li>
+                    <li class="menu-item"><a href="#">Tomatos</a></li>
+                    <li class="menu-item"><a href="#">Potatos</a></li>
+                    <li class="menu-item"><a href="#">Carrots</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="#">No children</a>
+            </li>
+        </ul>
+    </section>
+    <script src="jquery.js"></script>
+    <script src="a11y-dropdown.js"></script>
+</body>
+</html>

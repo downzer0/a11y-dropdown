@@ -1,0 +1,68 @@
+.a11y-dropdown {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .a11y-dropdown .sr-only {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px); }
+  .a11y-dropdown .menu-item {
+    position: relative;
+    display: inline-block; }
+    .a11y-dropdown .menu-item a {
+      display: block;
+      padding: 1em;
+      color: blue; }
+      .a11y-dropdown .menu-item a:hover, .a11y-dropdown .menu-item a:focus, .a11y-dropdown .menu-item a.is-hover-focus {
+        border-color: darkBlue;
+        background: white;
+        color: blue; }
+    .a11y-dropdown .menu-item .sub-menu {
+      position: absolute;
+      width: 10em;
+      margin: 0;
+      padding: 0;
+      border-width: 1px;
+      border-style: solid;
+      border-color: darkBlue;
+      background: white;
+      list-style: none;
+      z-index: 10; }
+      .a11y-dropdown .menu-item .sub-menu .menu-item a {
+        display: block;
+        border: 0;
+        padding: 1em;
+        color: blue; }
+        .a11y-dropdown .menu-item .sub-menu .menu-item a ul,
+        .a11y-dropdown .menu-item .sub-menu .menu-item a ol {
+          display: none; }
+        .a11y-dropdown .menu-item .sub-menu .menu-item a:hover, .a11y-dropdown .menu-item .sub-menu .menu-item a:focus {
+          color: blue;
+          text-decoration: underline; }
+      .a11y-dropdown .menu-item .sub-menu .menu-item .children,
+      .a11y-dropdown .menu-item .sub-menu .menu-item .sub-menu {
+        display: none; }
+    .a11y-dropdown .menu-item.is-expanded a {
+      border: 0;
+      color: blue; }
+      .a11y-dropdown .menu-item.is-expanded a:hover, .a11y-dropdown .menu-item.is-expanded a:focus {
+        border: 0; }
+    .a11y-dropdown .menu-item.is-expanded .children,
+    .a11y-dropdown .menu-item.is-expanded .sub-menu {
+      left: -1px;
+      width: 10em;
+      border: 1px solid darkBlue;
+      border-width: 1px;
+      padding: 0;
+      list-style: none;
+      background: white;
+      z-index: 10; }
+      .a11y-dropdown .menu-item.is-expanded .children .children,
+      .a11y-dropdown .menu-item.is-expanded .children .sub-menu,
+      .a11y-dropdown .menu-item.is-expanded .sub-menu .children,
+      .a11y-dropdown .menu-item.is-expanded .sub-menu .sub-menu {
+        display: none; }
+
+/*# sourceMappingURL=a11y-dropdown.css.map */
