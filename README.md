@@ -4,6 +4,10 @@ An accessible dropdown navigation for websites.
 ## Accessibility support
 This dropdown menu works for mouse and keyboard input devices. I'm working on a touch-friendly update.
 
+## Todos
+* Hide the menu items until they're explicityly opened to reduce auditory clutter.
+* Make the menu itself identifiable in landmark dialogs
+
 ## WordPress
 It was built around the output HTML that WordPress uses in its `wp_nav()` function, but can be modified easily to suit other dropdown navigation systems.
 
